@@ -1,3 +1,4 @@
+import ObjectDetection from "@/components/object-detection";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
       <h1 className="gradient-title font-extrabold text-3xl md:text-6xl lg:text-8xl tracking-tighter md:px-6 text-center">
         Detection Alarm
       </h1>
+      <ObjectDetection/>
     </main>
   );
 }
