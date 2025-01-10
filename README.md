@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Detectify - Real-Time Object Detection System
 
-## Getting Started
+Detectify is a real-time object detection web application that identifies objects in a live webcam feed. Built with **TensorFlow.js** and **Next.js**, the system focuses on detecting human presence for enhanced security monitoring. It features real-time classification, bounding box rendering, and an automated alert system for human detection.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔥 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Real-Time Object Detection**: Detects and classifies objects in the webcam feed with minimal latency.
+- **Human Detection Alerts**: Triggers audio alerts upon detecting human presence, ideal for security use cases.
+- **Bounding Box Visualization**: Highlights detected objects with color-coded bounding boxes.
+- **Responsive Design**: Optimized for various screen sizes and devices.
+- **Low-Latency Processing**: Processes video input with a detection interval of 10ms.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Demo
 
-## Learn More
+Check out a working demo of the application here: [Detectify Demo](#).
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Core Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **TensorFlow.js**: COCO-SSD model for object detection and classification.
+- **Next.js**: Framework for server-rendered React applications.
+- **React Webcam**: For video capture from the webcam.
+- **Canvas API**: For drawing bounding boxes and object labels on the video feed.
+- **Tailwind CSS**: For responsive and visually appealing design.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧩 Key Components
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **1. TensorFlow.js Integration**
+- Model: COCO-SSD pre-trained model for object detection.
+- Efficient loading and inference pipeline for smooth real-time detection.
+
+### **2. Frontend Development**
+- Built with Next.js and React.
+- Styled using Tailwind CSS for responsive and modern UI.
+- Modular component architecture for maintainability.
+
+### **3. Video Processing**
+- Captures webcam feed using React Webcam.
+- Renders bounding boxes and object labels with the Canvas API.
+- Uses `RequestAnimationFrame` for efficient frame-by-frame processing.
+
+### **4. Alert System**
+- Detects human presence and triggers audio alerts.
+- Implements throttling to prevent overlapping alerts.
+
+---
+
+
